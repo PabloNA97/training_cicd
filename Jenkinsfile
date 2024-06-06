@@ -28,6 +28,7 @@ pipeline {
                     pip install -r requirements.txt
                 '''
             }
+        }
         // Static Analysis stage to run PyLint and publish report
         stage('Static Analysis') {
             steps {
@@ -51,7 +52,6 @@ pipeline {
                     )
                 }
             }
-        }
         }
     }
 }
